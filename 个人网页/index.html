@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="093119127胡瑶瑶">
+    <title>个人电影推荐网</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        .meau {
+            position: fixed;
+            left: 50%;
+            top: 60px;
+            margin-left: -580px;
+
+        }
+
+        .meau a {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .meau a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="meau"><a href="../test 093119127/index.html">上机考核</a></div> -->
+    <div class="page">
+        <div class="nav clearfix">
+            <a href="dianying.html" class="logo fl">电影推荐</a>
+            <ul class="fr clearfix">
+                <a href="index.html">
+                    <li class="item">网站首页</li>
+                </a>
+                <a href="yuanchuang.html">
+                    <li class="item">视频分享</li>
+                </a>
+                <li class="item"><a href="about.html">电影</a>
+                    <ul class="a">
+                        <li><a href="jieshao.html">角色介绍</a></li>
+                        <li><a href="shangying.html">上映时间</a></li>
+                        <li><a href="ziliao.html">资料介绍</a></li>
+                        <li><a href="huojiang.html">获奖情况</a></li>
+                    </ul>
+                </li>
+
+                <a href="pingjia.html">
+                    <li class="item">影片评价</li>
+                </a>
+            </ul>
+        </div>
+        <div class="mid clearfix">
+            <div class="banner"><img src="images/bj1.jpg" alt="" id="lunbo_img"></div>
+            <div class="left fl">
+                <p class="title">关于我</p>
+                <div class="jj">
+                    <img src="images/kapok.jpg" alt="">
+                    <p><b>姓名：</b>胡瑶瑶</p>
+                    <p><b>手机：</b>188****1253</p>
+                    <p><b>邮箱：</b>1417894302@qq.com</p>
+                    <p><b>爱好：</b>音乐、动漫、写影评、看电影</p>
+                </div>
+                <p class="title">欢迎登录</p>
+                <form action="xxx.php" class="login" method="post">
+                    <input type="text" placeholder="请输入用户名" value="" id="text" />
+                    <div class="box">
+                        <label for="eye">
+                            <img src="./images/闭眼睛.png" alt="" id="eye">
+                        </label>
+                        <input type="password" placeholder="请输入密码" name="" id="pwd" maxlength="8" />
+                    </div>
+                    <button type="submit">登录</button>
+                </form>
+            </div>
+            <div class="right fl">
+                <p class="title">推荐理由</p>
+                <div class="wz">
+                    <img src="images/bj6.jpg" alt="" class="pic">
+                    <p>
+                        这部《小黄人大眼萌：神偷奶爸前传 Minions: The Rise of Gru 》的最大亮点就是它是一部合家欢的电影
+                        ，里面的情节虽然看起来有些“单纯”，但是细细想想，也是能给观众感悟的情节，这次的这部第二部是独立电影《小黄人大眼萌》的直接前传，还加入了不少中国元素，有十二生肖大战唐人街等等，配上笑点满满的情节设置，即使中间有一部分的情节看起来稍显幼稚，还是觉得这样的情节很能治愈
+                        。
+
+                    </p>
+                </div>
+                <div id="outerdiv"
+                    style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+                    <div id="innerdiv" style="position:absolute;">
+                        <img id="bigimg" style="border:5px solid #fff;" src="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">版权所属：093119127胡瑶瑶&emsp; 个人网页</div>
+    </div>
+    <script>
+        var pwd = document.getElementById('pwd');
+        var eye = document.getElementById('eye');
+        var flag = 0;
+        eye.onclick = function () {
+            if (flag == 0) {//判断
+                pwd.type = 'text';
+                this.src = './images/眼睛.png'
+                flag = 1;//重新赋值
+            } else {
+                pwd.type = 'password';
+                this.src = './images/闭眼睛.png';
+                flag = 0;
+            }
+
+        }
+    </script>
+</body>
+<script src="js/yhtx.js"></script>
+<script src="js/main.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/js.js"></script>
+</html>
